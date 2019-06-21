@@ -13,22 +13,17 @@ py.plot(fig, filename='savename.html', auto_open=False, include_plotlyjs=False)
 
 Rendering these later requires some additional HTML
 
-<object data="https://djmcnay.github.io/pandachartstore/PlotlyHTML/pokemon.html"></object>
-
-<html>
-    <head>
-        <script src="https://cdn.plot.ly/plotly-latest.min.js">
-            <object data="https://raw.githubusercontent.com/djmcnay/pandachartstore/master/PlotlyHTML/pokemon.html"></object>
-        </script>
-    </head>
-        
-</html>
-
-
-
-
 <table>
     <tr>
         <td>Foo</td>
     </tr>
 </table>
+
+
+
+<section>
+  <p>example</p>
+  <pre><code data-trim>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </code></pre>
+</section>

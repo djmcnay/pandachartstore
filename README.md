@@ -18,12 +18,3 @@ Rendering these later requires some additional HTML
         <td>Foo</td>
     </tr>
 </table>
-
-
-
-    <section>
-      <p>example</p>
-      <pre><code data-trim>
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      </code></pre>
-    </section>

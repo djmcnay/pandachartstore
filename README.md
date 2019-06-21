@@ -14,3 +14,11 @@ py.plot(fig, filename='savename.html', auto_open=False, include_plotlyjs=False)
 Rendering these later requires some additional HTML
 
 <object data="https://djmcnay.github.io/pandachartstore/PlotlyHTML/pokemon.html"></object>
+
+
+
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>

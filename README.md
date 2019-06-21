@@ -17,11 +17,11 @@ Rendering these later requires some additional HTML
 
 <html>
     <head>
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js">
+            <object data="https://djmcnay.github.io/pandachartstore/PlotlyHTML/pokemon.html"></object>
+        </script>
     </head>
-    <body>
-        <object data="https://djmcnay.github.io/pandachartstore/PlotlyHTML/pokemon.html"></object>
-    </body>
+        
 </html>
 
 

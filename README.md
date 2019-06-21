@@ -13,4 +13,4 @@ py.plot(fig, filename='savename.html', auto_open=False, include_plotlyjs=False)
 
 Rendering these later requires some additional HTML
 
-<object data="https://djmcnay.github.io/pandachartstore/PlotlyHTMLexJS/pokemon.html"></object>
+<object data="https://djmcnay.github.io/pandachartstore/PlotlyHTML/pokemon.html"></object>

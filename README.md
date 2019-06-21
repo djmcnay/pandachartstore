@@ -18,7 +18,7 @@ Rendering these later requires some additional HTML
 <html>
     <head>
         <script src="https://cdn.plot.ly/plotly-latest.min.js">
-            <object data="https://djmcnay.github.io/pandachartstore/PlotlyHTML/pokemon.html"></object>
+            <object data="https://raw.githubusercontent.com/djmcnay/pandachartstore/master/PlotlyHTML/pokemon.html"></object>
         </script>
     </head>
         

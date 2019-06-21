@@ -18,12 +18,10 @@ Rendering these later requires some additional HTML
 <html>
     <head>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-              <link rel="stylesheet" href="">
-             <style>body{margin:0 100}</style>
-            </head>
-            <body>
-         
-   </body>
+    </head>
+    <body>
+        <object data="https://djmcnay.github.io/pandachartstore/PlotlyHTML/pokemon.html"></object>
+    </body>
 </html>
 
 

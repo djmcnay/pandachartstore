@@ -34,6 +34,13 @@ Firstly, we can take advantage of Jupyter magics and use HTML & object tags. In 
 <object data="https://djmcnay.github.io/pandachartstore/PlotlyHTMLexJS/pokemon.html" width="800", height="200"></object>
 ```
 
+Equivalent code, but in Python (which helps with hiding code cells) is 
+
+```
+HTML('''<object data="https://djmcnay.github.io/pandachartstore/PlotlyHTMLexJS/pokemon.html" 
+                width="800" height="500"></object>''')
+```
+
 The other option is to read in the HTML file and use IPython.display. In this case we use the *raw* files from githubusercontent to read in the HTML, convert it from 'bytes' to 'string' and then display the HTML; this looks better but means the content is read in when the book is built (and is therefore static).
 
 ```
@@ -43,8 +50,3 @@ from urllib.request import urlopen
 link = "https://raw.githubusercontent.com/djmcnay/pandachartstore/master/PlotlyHTMLexJS/pokemon.html"
 display(HTML(urlopen(link).read().decode("utf-8")))
 ```
-
-
-<div markdown="0" class="output output_html">
-<object data="https://djmcnay.github.io/pandachartstore/PlotlyHTMLexJS/pokemon.html"></object>
-</div>

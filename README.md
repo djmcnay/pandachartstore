@@ -4,17 +4,20 @@ Chartstore is designed to be a dynamically updatable repo for charts used in the
 
 ## User Guide
 
-Most plots have been built using [Plotly](https://plot.ly/python/) and stored as HTML files. By default Plotly stores all the javascript required to render the plot in HTML but this can lead to some serious bloating in file size so most charts here are stored exJS.
+Charts have mostly been built using [Plotly](https://plot.ly/python/) and are stored as HTML files. By default Plotly stores all the javascript required to render the plot in HTML (~3mb) which causes some serious bloating in project size, so most charts here are stored ex. JS.
 
-To save a Plotly chart like this we need to set "include_plotlyjs" to False
+To save a Plotly chart like this we need to set "include_plotlyjs" to 'cdn'
+
 ```
-py.plot(fig, filename='savename.html', auto_open=False, include_plotlyjs=False)
+py.plot(fig, filename='savename.html', include_plotlyjs='cdn')
 ```
 
-Rendering these later requires some additional HTML
+By using 'cdn' rather than False the output file includes an HTML tag that links to the .js externally. This means that the HTML files will render in a browser but *only if there is an internet connection* 
 
-<table>
-    <tr>
-        <td>Foo</td>
-    </tr>
-</table>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+
+For more information on this point look at the help file (online documentation is pretty poor)
+
+```
+help(plotly.offline.plot)
+```

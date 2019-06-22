@@ -43,3 +43,8 @@ from urllib.request import urlopen
 link = "https://raw.githubusercontent.com/djmcnay/pandachartstore/master/PlotlyHTMLexJS/pokemon.html"
 display(HTML(urlopen(link).read().decode("utf-8")))
 ```
+
+
+<div markdown="0" class="output output_html">
+<object data="https://djmcnay.github.io/pandachartstore/PlotlyHTMLexJS/pokemon.html"></object>
+</div>

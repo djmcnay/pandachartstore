@@ -27,14 +27,17 @@ help(plotly.offline.plot)
 #### Rendering for Jupyter-Books
 Thus far there appears to be two options, neither of which are ideal.
 
-Firstly, we can take advantage of Jupyter magics and use HTML & object tags. In doing this we have to convert the Github repo into a github pages site and then link to the individual HTML page. **Hopefully** this provides a dynamic method, but that still needs testing. Very annoyingly the object tag needs height and width to be constructed manually 
+Firstly, we can take advantage of Jupyter magics and use HTML & object tags. In doing this we have to convert the Github repo into a github pages site and then link to the individual HTML page. This provides a dynamic method, but very annoyingly the object tag needs height and width to be constructed manually.
 
 ```
 %%html
-<object data="https://djmcnay.github.io/pandachartstore/PlotlyHTMLexJS/pokemon.html" width="800", height="200"></object>
+<object data="https://djmcnay.github.io/pandachartstore/PlotlyHTMLexJS/pokemon.html"
+        width="800" 
+        height="200">
+</object>
 ```
 
-We can create equivalent code in Python either directly or using a lambda function
+We can create equivalent code in Python either directly or using a lambda function. **However**, whilst this works in the notebook normally, when combined with a 'tag' to hide the code and is rendered into a Jupyter-Book it shows the HTML output not the chart.
 
 ```
 HTML('''<object data="https://djmcnay.github.io/pandachartstore/PlotlyHTMLexJS/pokemon.html" 
